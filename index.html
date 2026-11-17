@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#11161d">
+  <title>Mishka</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">ТВОЁ ТВОРЧЕСКОЕ ПРОСТРАНСТВО</div>
+        <h1>Mishka<span class="blue">.</span></h1>
+      </div>
+      <button class="avatar" aria-label="Профиль">M</button>
+    </header>
+
+    <main id="view" class="content">
+      <section class="welcome">
+        <div>
+          <p class="muted">С возвращением</p>
+          <h2>Твоя коллекция</h2>
+          <p class="muted small">Все раскраски — в одном уютном месте.</p>
+        </div>
+        <div class="sparkle">✦</div>
+      </section>
+
+      <section class="stats-row">
+        <article class="stat-card"><span class="stat-icon">▤</span><strong id="book-count">2</strong><span>книги</span></article>
+        <article class="stat-card"><span class="stat-icon">✦</span><strong>0</strong><span>готовых картинок</span></article>
+        <article class="stat-card"><span class="stat-icon">◷</span><strong>0 ч</strong><span>за раскраской</span></article>
+      </section>
+
+      <div class="section-heading">
+        <div><p class="eyebrow">БИБЛИОТЕКА</p><h3>Мои книги</h3></div>
+        <button class="text-button" data-action="add-book">＋ Добавить</button>
+      </div>
+      <div class="book-grid" id="books">
+        <article class="book-card">
+          <div class="cover cover-one"><span class="cover-kicker">COLORING BOOK</span><span class="cover-title">My<br>Little<br>World</span><span class="cover-mark">01</span></div>
+          <div class="book-info"><strong>Моя первая книга</strong><span>0 из 40 картинок</span><div class="progress"><i style="width:0%"></i></div><small>0% завершено</small></div>
+        </article>
+        <article class="book-card">
+          <div class="cover cover-two"><span class="cover-kicker">MYSTERY COLOR</span><span class="cover-title">Secret<br>Garden</span><span class="cover-mark">02</span></div>
+          <div class="book-info"><strong>Секретный сад</strong><span>0 из 50 картинок</span><div class="progress"><i style="width:0%"></i></div><small>0% завершено</small></div>
+        </article>
+      </div>
+      <p class="prototype-note">Это первые демонстрационные карточки. Позже заменим их твоими настоящими книгами и обложками.</p>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Основная навигация">
+      <button class="nav-item active" data-tab="home"><span>⌂</span>Главная</button>
+      <button class="nav-item" data-tab="search"><span>⌕</span>Поиск</button>
+      <button class="nav-item" data-tab="palette"><span>◈</span>Палитра</button>
+      <button class="nav-item" data-tab="stats"><span>▥</span>Статистика</button>
+      <button class="nav-item" data-tab="profile"><span>◉</span>Профиль</button>
+    </nav>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

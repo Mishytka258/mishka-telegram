@@ -1,0 +1,8 @@
+{
+  "name": "Mishka",
+  "short_name": "Mishka",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#11161d",
+  "theme_color": "#11161d"
+}
